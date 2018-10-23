@@ -4,12 +4,61 @@
 	"description": "帮助你玩转 GitBook",
 	"language": "zh-hans",
 	"plugins": [
-		  "-lunr", "-search", "search-pro-kui"
+		"-lunr", "-search", "search-pro-kui", 
+		"github", 
+		"include-codeblock",
+		"-sharing", "sharing-plus",
+		"tbfed-pagefooter",
+		"anchors",
+		"edit-link",
+		"copy-code-button",
+		"alerts"
 	],
 	"pluginsConfig": {
 		"fontsettings": {
 			"theme": "white",
 			"family": "sans"
+		},
+		"github": {
+			"url": "https://github.com/bestony/gitbook-guide"
+		},
+		"include-codeblock": {
+			"template": "default",
+			"unindent": true,
+			"theme": "monokai"
+		},
+		"sharing": {
+			"douban": false,
+			"facebook": false,
+			"google": true,
+			"hatenaBookmark": false,
+			"instapaper": false,
+			"line": true,
+			"linkedin": true,
+			"messenger": false,
+			"pocket": false,
+			"qq": false,
+			"qzone": true,
+			"stumbleupon": false,
+			"twitter": true,
+			"viber": false,
+			"vk": false,
+			"weibo": true,
+			"whatsapp": false,
+			"all": [
+				"facebook", "google", "twitter",
+				"weibo", "instapaper", "linkedin",
+				"pocket", "stumbleupon"
+			]
+		},
+		"tbfed-pagefooter": {
+			"copyright": "Copyright &copy Bestony 2018",
+			"modify_label": "该文件修订时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"edit-link": {
+			"base": "https://github.com/bestony/gitbook-guide/edit/master",
+			"label": "编辑本页内容"
 		}
 	},
 	"links": {

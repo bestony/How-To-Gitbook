@@ -22,39 +22,8 @@ Travis CI 的构建是基于 `.travis.yml` 文件进行的，因此，为了让 
 ![](https://postimg.aliavv.com/newmbp/yjb5e.jpg)
 
 并粘贴如下代码：
+[import](../.travis.yml)
 
-```yml
-language: node_js
-
-node_js:
-  - "8"
-
-cache:
-  directories:
-    - $HOME/.npm
-
-before_install:
-  - export TZ='Asia/Shanghai'
-
-install:
-  - npm install gitbook-cli -g
-  - gitbook install
-
-script:
-  - gitbook build . ./build
-
-branches:
-  only:
-    - master
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
-```
 
 添加完成后，选择 **commit new file** 即可。
 
@@ -86,9 +55,11 @@ deploy:
 
 进入到项目设置界面。
 
-在下方的**Environment Variables**中添加一个新的名为`GITHUB_TOKEN` 的环境变量，，将你自己的 Personal Access Token 填入其中，用于后续的 Github Pages 自动上传。
+在下方的**Environment Variables**中添加一个新的名为`GITHUB_TOKEN` 的环境变量，，将你自己的 [Personal Access Token](https://github.com/settings/tokens) 填入其中，用于后续的 Github Pages 自动上传。
 
-> Personal Access Token 可以在 https://github.com/settings/tokens 页面生成。需要勾选 repo 的权限。
+> **[danger] 安全须知**
+>
+> 请不要将 Token 告诉他人，以免他人使用你的 Token 修改你的项目
 
 ![](https://postimg.aliavv.com/newmbp/7ol3l.jpg)
 
