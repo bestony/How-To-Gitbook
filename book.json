@@ -1,0 +1,20 @@
+{
+	"title": "GitBook 完全指南",
+	"author": "Bestony",
+	"description": "帮助你玩转 GitBook",
+	"language": "zh-hans",
+	"plugins": [
+		  "-lunr", "-search", "search-pro-kui"
+	],
+	"pluginsConfig": {
+		"fontsettings": {
+			"theme": "white",
+			"family": "sans"
+		}
+	},
+	"links": {
+		"sidebar": {
+			"Github": "https://github.com/bestony/gitbook-guide"
+		}
+	}
+}
