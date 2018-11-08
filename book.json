@@ -3,12 +3,14 @@
 	"author": "Bestony",
 	"description": "帮助你玩转 GitBook",
 	"language": "zh-hans",
+	"structure":{
+		"readme":"index.md"
+	},
 	"plugins": [
-		"-lunr", "-search", "search-pro-kui", 
-		"github", 
+		"-lunr", "-search", "search-pro-kui",
+		"github",
 		"include-codeblock",
 		"-sharing", "sharing-plus",
-		"tbfed-pagefooter",
 		"anchors",
 		"edit-link",
 		"copy-code-button",
@@ -20,7 +22,7 @@
 			"family": "sans"
 		},
 		"github": {
-			"url": "https://github.com/bestony/gitbook-guide"
+			"url": "https://github.com/bestony/How-To-Gitbook"
 		},
 		"include-codeblock": {
 			"template": "default",
@@ -51,19 +53,14 @@
 				"pocket", "stumbleupon"
 			]
 		},
-		"tbfed-pagefooter": {
-			"copyright": "Copyright &copy Bestony 2018",
-			"modify_label": "该文件修订时间：",
-			"modify_format": "YYYY-MM-DD HH:mm:ss"
-		},
 		"edit-link": {
-			"base": "https://github.com/bestony/gitbook-guide/edit/master",
+			"base": "https://github.com/bestony/How-To-Gitbook/edit/master",
 			"label": "编辑本页内容"
 		}
 	},
 	"links": {
 		"sidebar": {
-			"Github": "https://github.com/bestony/gitbook-guide"
+			"Github": "https://github.com/bestony/How-To-Gitbook"
 		}
 	}
 }
